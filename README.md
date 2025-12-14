@@ -8,29 +8,27 @@ This project implements **ChaCha20-Poly1305** alongside **DTLS** to securely upl
 
 ## ChaCha20-Poly1305
 
-### Compile
+### Compile and Test
 
 ```bash
 g++ ChaCha20-Poly1305.cpp main.cpp -Wall
-```
-
-### Test
-
-```bash
 ./a.out
 ```
 
 ## DTLS Client/Server
 
-### Change Directory
+### Generate Server Certificates
 
 ```bash
-cd DTLS
+cd certs
+chmod +x gen_self_signed.sh
+./gen_self_signed.sh
 ```
 
 ### Compile Server and Client
 
 ```bash
+cd DTLS
 make
 ```
 
