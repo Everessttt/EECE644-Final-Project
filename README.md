@@ -1,4 +1,4 @@
-# Final Project
+# EECE644 Final Project
 
 This project implements **ChaCha20-Poly1305** alongside **DTLS** to securely upload files from client to server.
 
